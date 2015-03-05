@@ -13,7 +13,7 @@ static const void *ISHeaderRefreshCallbackKey = &ISHeaderRefreshCallbackKey;
 
 @interface UIScrollView()
 
-@property (nonatomic, strong) UIRefreshControl *headerRefreshControl;
+@property (nonatomic, weak) UIRefreshControl *headerRefreshControl;
 @property (nonatomic, copy) voidBlock headerRefreshCallback;
 
 @end
