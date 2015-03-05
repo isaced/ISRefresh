@@ -7,9 +7,9 @@ Easy add UIRefreshControl to any view based UIScrollView
 ### Usage
 
 ```
-[self.collectionView addHeaderRefreshWithCallback:^{
-	// load...
-	[self.collectionView endRefreshing];
+__weak ViewController *weakSelf = self;
+[self.scrollView addHeaderRefreshWithCallback:^{
+    // load...
+    [weakSelf.scrollView endRefreshing];
 }];
-
 ```
