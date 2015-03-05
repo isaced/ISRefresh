@@ -40,7 +40,11 @@ static const void *ISHeaderRefreshCallbackKey = &ISHeaderRefreshCallbackKey;
 
 - (void)headerRefreshComplate:(UIRefreshControl *)refreshControl{
     if (self.headerRefreshCallback) {
-        self.headerRefreshCallback();
+        
+        // Go to Main Queue
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.headerRefreshCallback();
+        });
     }
 }
 
