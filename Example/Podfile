@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ISRefresh_Example' do
+  pod 'ISRefresh', :path => '../'
+
+  target 'ISRefresh_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

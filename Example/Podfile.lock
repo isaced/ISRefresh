@@ -1,0 +1,16 @@
+PODS:
+  - ISRefresh (0.1.0)
+
+DEPENDENCIES:
+  - ISRefresh (from `../`)
+
+EXTERNAL SOURCES:
+  ISRefresh:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ISRefresh: 48dd65c2aa942ae6a6661f79316cd48a72d5b7ab
+
+PODFILE CHECKSUM: 13087fcf68533bc8068b953353437728b417ebd8
+
+COCOAPODS: 1.0.1
